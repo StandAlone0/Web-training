@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" name=viewport content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="container">
+        <div class="header-logo">CheatSheet</div>
+
+        <div class="header-line">
+
+            <div class="nav">
+                <a class="nav-item" id="html-button">HTML</a>
+                <a class="nav-item" id="css-button">CSS</a>
+                <a class="nav-item" id="js-button">JavaScript</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="main">
+    <div class="container_main">
+        <table class="table_HTML">
+            <tbody>
+            <tr>
+                <td class="row_number">1</td>
+                <td><pre>
+                    &lt;div id="demo" class="big" dir="ltr" lang="en"
+                    style="color: red;" tabindex="0" title="Tooltip"
+                    contenteditable="true" spellcheck="true"
+                    data-htmlcheat="99">Hello World!&lt;/div></pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">2</td>
+                <td><pre>
+                    &lt;img src="/demo.jpg" alt="description" height="48" width="100" /></pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">3</td>
+                <td><pre>
+        &lt;table style="border-collapse: collapse;">
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td>Hello;&lt;/td>
+                    &lt;td>Hello;&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>Hello;&lt;/td>
+                    &lt;td>Hello;&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+    &lt;/table></pre>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+        <table class="table_CSS">
+            <tbody>
+            <tr>
+                <td class="row_number">1</td>
+                <td>
+                    <pre>&lt;link rel="stylesheet" type="text/css" href="/style.css" /></pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">2</td>
+                <td>
+                    <div>Selectors:<br>
+                        * => all elements<br>
+                        div => all div tags<br>
+                        div,p => all divs and paragraphs<br>
+                        div p => paragraphs inside divs<br>
+                        div > p => all p tags, one level deep in div<br>
+                        div + p => p tags immediately after div<br>
+                        div ~ p => p tags preceded by div<br>
+                        .classnamea => ll elements with class<br>
+                        #idname => element with ID<br>
+                        div.classname => divs with certain classname<br>
+                        div#idname => div with certain ID<br>
+                        #idname * => all elements inside #idname<br></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">3</td>
+                <td>
+                    <div>
+                        Pseudo classes:<br>
+                        a:link => link in normal state<br>
+                        a:active => link in clicked state<br>
+                        a:hover => link with mouse over it<br>
+                        a:visited => visited link<br>
+                        p::after{content:"yo";} => add content after p<br>
+                        p::before => add content before p<br>
+                        input:checked => checked inputs<br>
+                        input:disabled => disabled inputs<br>
+                        input:enabled => enabled inputs<br>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+
+        </table>
+        <table class="table_JS">
+            <tbody>
+            <tr>
+                <td class="row_number">1</td>
+                <td><pre>
+                    for (var i = 0; i < 10; i++) {
+                    document.write(i + ": " + i*3 + "&lt;br />");
+                    }</pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">2</td>
+                <td>
+                    <pre>
+                        const cars = ['Мазда', 'Форд', 'БМВ', 'Мерседс']
+                        const index = cars.indexOf('БМВ')
+                        cars[index] = 'Porsche'
+                        console.log(cars)
+                        let findedPerson
+                        for (const person of people) {
+                          if (person.budget === 3500) {
+                            findedPerson = person
+                          }
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td class="row_number">3</td>
+                <td><pre>
+class Book {
+    constructor(title, author, year) {
+        this.title = title
+        this.author = author
+        this.year = year
+    }
+    getSummary() {
+        console.log(`this ${this.title} was written in ${this.year} by ${this.author}`)
+    }
+}
+
+const book1 = new Book('Book 1', 'John Doe', '1989')
+book1.getSummary()
+                </pre></td>
+            </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+<script src="test.js"></script>
+</body>
+
+</html>
